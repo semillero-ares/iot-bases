@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 3 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 3";
+        var mkdocs_page_input_path = "Clases\\clase 3.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 3</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#arquitectura-iot">Arquitectura IoT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#capas-en-una-arquitectura-de-iot">Capas en una arquitectura de IoT:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#diseno-de-una-solucion-iot">Diseño de una solución IoT:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 3</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-3">Clase 3</h1>
+<h2 id="ti">TI</h2>
+<h3 id="arquitectura-iot">Arquitectura IoT</h3>
+<p>¿Qué es una arquitectura?</p>
+<p>Describe la interacción entre los componentes del sistema, por lo que permite representar de forma detallada los componentes de hardware, los protocolos de comunicación y la interacción segura y eficiente con el software que interactúa con el cliente. A partir de lo expuesto, se presentan las arquitecturas y sus principales componentes para aplicaciones de Internet de las Cosas.</p>
+<p><img alt="" src="../../img/Centralizado.png" /></p>
+<p>Requerimientos de una arquitectura IoT:</p>
+<ol>
+<li>
+<p><strong>Conectividad permanente</strong>:
+Al ser Internet de las Cosas una red de múltiples dispositivos conectados a Internet, es indispensable tener una conexión permanente entre dispositivos, además de tener alternativas para el respaldo de información en los casos en que esta conexión presente fallos.</p>
+</li>
+<li>
+<p><strong>Gestión de los datos</strong>:
+Debe realizar una gestión adecuada de los datos, debe permitir una recolección de la información de forma eficiente y debe establecer las estrategias de análisis automático de la información. Por último, en una arquitectura de IoT se deben establecer procedimientos que permitan la toma de decisiones a partir de la recolección y análisis de la información.</p>
+</li>
+<li>
+<p><strong>Gestión de los dispositivos</strong>:
+Debe establecer estrategias para realizar configuraciones, actualizaciones, búsqueda y reporte de fallos, de forma eficiente para todos los dispositivos interconectados.</p>
+</li>
+<li>
+<p><strong>Escalabilidad</strong>:
+Debe permitir el registro, actualización y eliminación de dispositivos de manera fácil y rápida. De igual manera, debe establecer estrategias de gestión de red que permitan el envío y registro de información sin que existan pérdidas considerables.</p>
+</li>
+<li>
+<p><strong>Flexibilidad</strong>:
+Debe permitir la gestión de dispositivos sin importar el fabricante del dispositivo y los protocolos de comunicación de éstos, por lo que debe establecer procedimientos que le permitan adaptarse a los cambios tecnológicos y nuevos protocolos existentes.</p>
+</li>
+<li>
+<p><strong>Seguridad</strong>:
+La seguridad en una arquitectura de Internet de las Cosas (IoT) es fundamental, por lo que se deben establecer estrategias de gestión de red utilizando protocolos de transferencia de información rápidos, pero a su vez seguros.</p>
+</li>
+</ol>
+<h3 id="capas-en-una-arquitectura-de-iot">Capas en una arquitectura de IoT:</h3>
+<p>Las capas en una arquitectura definen las interacciones entre el hardware del sistema IoT con los dispositivos de red, protocolos de comunicación y el software de interacción con el usuario.</p>
+<p>En la literatura se reportan arquitecturas de IoT hasta con siete o más capas; esto varía dependiendo del uso de la aplicación y protocolos de transferencias de información y seguridad que se requiera dependiendo el tipo de sistema IoT. Por lo tanto, una arquitectura de IoT tiene que ser escalable y flexible.</p>
+<p>A continuación se expone la arquitectura de tres capas de IoT, es la base fundamental de las demás arquitecturas existentes.</p>
+<ol>
+<li>
+<p><strong>Aplicación</strong>:
+En esta capa se encuentran las aplicaciones, generalmente interfaces, que se encargan de la interacción con el usuario final de la aplicación.</p>
+</li>
+<li>
+<p><strong>Red</strong>:
+En esta capa se encuentran los dispositivos de red que se encargan de gestionar todo el tráfico de información a través de la red mediante protocolos como HTTP, RESTful, MQTT, CoAP.</p>
+</li>
+<li>
+<p><strong>Percepción</strong>:
+En esta capa se encuentran las cosas (Things), también llamadas entidades u objetos, que se encargan de la recolección de información del entorno a través de sensores y de la interacción con el mismo mediante actuadores.</p>
+</li>
+</ol>
+<p><img alt="" src="../../img/Capas_iot.png" /></p>
+<h3 id="diseno-de-una-solucion-iot">Diseño de una solución IoT:</h3>
+<p>El diseño de una solución se compone de las siguientes 9 fases:</p>
+<ol>
+<li>
+<p><strong>Descripción del problema</strong>:</p>
+<ul>
+<li>¿Qué problema voy a solucionar?</li>
+<li>Alcance de la solución</li>
+<li>Resultados esperados</li>
+<li>Nombre de la aplicación</li>
+</ul>
+</li>
+<li>
+<p><strong>Requerimientos</strong>:</p>
+<ul>
+<li>Son aquellas peticiones que realizan los clientes para el funcionamiento de su aplicación.</li>
+<li>La abstracción del problema para su posterior implementación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entidades (Variables)</strong>:</p>
+<ul>
+<li>Nombre: debe ser único.</li>
+<li>Tipo: numérica, texto, booleana.</li>
+<li>Rango: finito, determinado por los sensores.</li>
+</ul>
+</li>
+<li>
+<p><strong>Servicios (Funciones)</strong>:</p>
+<ul>
+<li>Son aquellas acciones que nuestro sistema IoT realiza constantemente.</li>
+<li>Por lo general, tienen retorno ya sea texto, numérico o booleano.</li>
+<li>Se definen a partir de las abstracciones de los requerimientos iniciales.</li>
+</ul>
+</li>
+<li>
+<p><strong>Eventos</strong>:</p>
+<ul>
+<li>Son lo que se ejecuta cuando alguna variable está fuera de sus parámetros establecidos.</li>
+<li>Por lo general, los parámetros están definidos por los rangos de las entidades.</li>
+<li>Estos pueden generar desde una alerta al usuario hasta el control de un actuador.</li>
+</ul>
+</li>
+<li>
+<p><strong>Arquitectura</strong>:</p>
+<ul>
+<li>En la arquitectura centralizada, se posee una capa de depuración.</li>
+<li>En la arquitectura distribuida, la depuración se realiza en los sensores o en el servidor, no como una capa extra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Protocolos</strong>:</p>
+<ul>
+<li><em>HTTP (Hypertext Transfer Protocol)</em>: Es el nombre dado a un protocolo que permite la petición de datos y recursos. Es la base para el intercambio de datos en la web.</li>
+<li><em>CoAP</em>: Es usado en dispositivos con recursos limitados (Sensores inalambricos). Este protocolo pretende replicar el modo de funcionamiento HTTP.</li>
+<li><em>MQTT (Message Queue Telemetry Transport)</em>: Es un protocolo de comunicación Maquina a Maquina (M2M, por sus siglas en ingles).</li>
+<li>Otros más</li>
+</ul>
+</li>
+<li>
+<p><strong>Almacenamiento</strong>:</p>
+<ul>
+<li>Base de datos Relacionales (Maria DB)</li>
+<li>Base de datos no relacionales (Firebase)</li>
+</ul>
+</li>
+<li>
+<p><strong>Interfaz</strong>:</p>
+<ul>
+<li>Se define la manera en que se entregará la información y las soluciones. Normalmente, mediante gráficos.</li>
+</ul>
+</li>
+</ol>
+<h2 id="td">TD</h2>
+<ol>
+<li>
+<p>Resolver dudas y conversación sobre el TI</p>
+</li>
+<li>
+<p>Apliación de la estructura IoT por parte del profesor:</p>
+<p><img alt="" src="../../img/Capas_Arquitectura_IoT.png" /></p>
+</li>
+<li>
+<p>Video de 6 min sobre la Arquitectura IoT de 4 capas (en ingles):</p>
+<p><div class="row mb-3">
+<div class="col-12 mx-auto">
+<div style="background-color:black;width:100%;padding-top:56.25%;position:relative;">
+<iframe style="position:absolute;top:0;left:0;bottom:0;right:0;" width="100%" height="100%" src="https://www.youtube.com/embed/fvabthY4Ejg?si=uip0eNH4cgm52eKK" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+</div>
+</div></p>
+</li>
+<li>
+<p>Para este TD los estudiantes pueden ir planeando con acompañamiento del profesor el proyecto de la materia aplicando lo aprendido sobre arquitectura IoT.</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../clase%202/" class="btn btn-neutral float-left" title="Clase 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase%204/" class="btn btn-neutral float-right" title="Clase 4">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../clase%202/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase%204/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

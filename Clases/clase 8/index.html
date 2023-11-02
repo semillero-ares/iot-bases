@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 8 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 8";
+        var mkdocs_page_input_path = "Clases\\clase 8.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 8</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#protocolo-http">Protocolo HTTP</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 8</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-8">Clase 8</h1>
+<h2 id="ti">TI</h2>
+<h3 id="protocolo-http">Protocolo HTTP</h3>
+<p>El Protocolo de Transferencia de HiperTexto (Hypertext Transfer Protocol) es un sencillo protocolo cliente-servidor que articula los intercambios de información entre los clientes Web y los servidores HTTP. HTTP se basa en sencillas operaciones de solicitud/respuesta. Un cliente establece una conexión con un servidor y envía un mensaje con los datos de la solicitud. El servidor responde con un mensaje similar, que contiene el estado de la operación y su posible resultado. Todas las operaciones pueden adjuntar un objeto o recurso sobre el que actúan; cada objeto Web (documento HTML, fichero multimedia o aplicación CGI) es conocido por su URL.</p>
+<p>En otras palabras, el protocolo HTTP permite realizar una petición de datos y recursos principalmente a la web, donde su estructura está basada en cliente-servidor. Esto quiere decir que una petición de datos es iniciada por el elemento que, después de unos segundos, recibirá los datos (el cliente).</p>
+<p>La arquitectura de clientes y servidores se comunica intercambiando mensajes individuales (diferente a las comunicaciones, las cuales utilizan flujos continuos de datos). Los mensajes que envía el cliente, normalmente un navegador web, se llaman peticiones, y los mensajes enviados como respuesta por el servidor se llaman respuestas.</p>
+<p>Cada vez que un cliente realiza una petición a un servidor, se ejecutan los siguientes pasos:</p>
+<ul>
+<li>Un usuario accede a una URL, seleccionando un enlace de un documento HTML o introduciéndola directamente en el campo Location del cliente Web.</li>
+<li>El cliente Web descodifica la URL, separando sus diferentes partes. Así identifica el protocolo de acceso, la dirección DNS o IP del servidor, el posible puerto opcional (el valor por defecto es 80) y el objeto requerido del servidor.</li>
+<li>Se abre una conexión TCP/IP con el servidor, llamando al puerto TCP correspondiente.</li>
+<li>Se realiza la petición. Para ello, se envía el comando necesario (GET, POST, HEAD,…), la dirección del objeto requerido (el contenido de la URL que sigue a la dirección del servidor), la versión del protocolo HTTP empleada (casi siempre HTTP/1.0) y un conjunto variable de información, que incluye datos sobre las capacidades del buscador, datos opcionales para el servidor, entre otros.</li>
+<li>El servidor devuelve la respuesta al cliente. Consiste en un código de estado y el tipo de dato MIME (Multipurpose Internet Mail Extensions) de la información de retorno, seguido de la propia información.</li>
+<li>Se cierra la conexión TCP.</li>
+</ul>
+<p>Vamos a ponerlo en practica, abre  Node-Red y sigue los paso a continuación:</p>
+<ol>
+<li>
+<p>Arrastrá al workspace un nodo <strong>inject</strong>, uno <strong>http in</strong>, uno <strong>http response</strong>, dos nodos <strong>debug</strong> y un nodo <strong>http request</strong>.</p>
+<p><img alt="" src="../../img/http_1.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>inject</em>, en la propiedad payload seleccionar la variable <em>string</em> donde se escribira un dato bajo el formato json, de tal manera que simularemos la temperatura y humedad del medio ambiente. Hacer click en Done.</p>
+<p><img alt="" src="../../img/http_2.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>HTTP Request</em>: en la propiedad "Method," seleccionar POST; en el URL, escribir http://127.0.0.1:1880/SensorTemperatura, que es la dirección a la cual se enviarán los datos. En "Return," seleccionar la tercera opción, dado el formato con el cual se enviaron previamente. Dar el nombre y terminar.</p>
+<p><img alt="" src="../../img/http_3.png" /></p>
+</li>
+<li>
+<p>En los nodos <em>debug</em>, no se necesita configuración.</p>
+</li>
+<li>
+<p>En el nodo <em>HTTP In</em>: en la sección de propiedades, para "Method," seleccionar POST; en URL, se escribe el tópico o tema del cual se va a recibir la información, en este caso, es "SensorTemperatura". Dar nombre y terminar.</p>
+<p><img alt="" src="../../img/http_4.png" /></p>
+</li>
+<li>
+<p>En el nodo HTTP Response, en la sección de propiedades, únicamente se modifica la etiqueta de nombre.</p>
+<p><img alt="" src="../../img/http_5.png" /></p>
+</li>
+<li>
+<p>Si todo esta bien configurado debe quedar de la siguiente manera:</p>
+<p><img alt="" src="../../img/http_6.png" /></p>
+</li>
+</ol>
+<h2 id="td">TD</h2>
+<ol>
+<li>Resolver las dudas que tenga el grupo sobre HTTP</li>
+<li>Realizar la siguiente practica acompañados del profesor<ul>
+<li>Se necesita los siguientes componentes:<ul>
+<li>Tarjeta ESP8266 o equivalente</li>
+<li>FTDI de programación (muchas veces ya esta incorporado en la ESP8266)</li>
+<li>Sensor de temperatura</li>
+</ul>
+</li>
+<li>Conectar el sensor de temperatura a la tarjeta ESP8266.</li>
+<li>Instalar en Arduino la placa ESP8266<ul>
+<li>En la interfaz de Arduino vaya al <em>menú de archivo</em> y dé clic en la pestaña de preferencias</li>
+<li>En preferencias ir a la opción de <em>Gestor de URLs Adicionales de Tarjetas</em> e ingresar el siguiente URL <strong>http://arduino.esp8266.com/stable/package_esp8266com_index.json</strong> y dar clic en ok.</li>
+<li>En el menú de herramientas, en la opción de seleccionar placa, ir al gestor de tarjetas</li>
+<li>En el Gestor de tarjetas digite esp8266 en el cuadro de texto tipo y luego haga clic en la opción de acuerdo a la tarjeta a usar; seguido haga clic en el botón instalar o en su defecto en actualizar. A continuación, espere que se instale el paquete de placas, esto puede tardar unos minutos, por favor espere a que se instale por completo.</li>
+<li>Ahora en el menú de herramientas deberia aparecer las placas ESP8266.</li>
+</ul>
+</li>
+<li>Codigo de Arduino</li>
+<li>Cargar el codigo a la tarjeta</li>
+<li>Desarrollo del Node-RED</li>
+<li>Darle candela</li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../clase%207/" class="btn btn-neutral float-left" title="Clase 7"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase%209/" class="btn btn-neutral float-right" title="Clase 9">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../clase%207/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase%209/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

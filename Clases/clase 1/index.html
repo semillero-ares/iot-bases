@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 1 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 1";
+        var mkdocs_page_input_path = "Clases\\clase 1.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#iot">IOT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#historia-del-iot">Historia del IOT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#etapas-de-una-solucion-iot">Etapas de una solución IoT</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 1</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-1">Clase 1</h1>
+<h2 id="ti">TI</h2>
+<h3 id="iot">IOT</h3>
+<p>En la actualidad se habla de la <strong>industria 4.0</strong>, que son las industrias que se apoyan de las tecnologías actuales para optimizar sus procesos de producción.
+Esta industria basa sus principios en 4 tecnologías:</p>
+<ul>
+<li>El internet de las cosas (IOT)</li>
+<li>Sistemas Ciberfísicos</li>
+<li>Big Data</li>
+<li>Inteligencia computacional</li>
+</ul>
+<p>¿<em>Que viene a tu mente cuando escuchas Internet de las cosas (IOT)</em>?</p>
+<p>El internet de las cosas es la basa para las demás tecnologías. Anteriormente este termino se usaba solo en las tecnologías que usaban Identificación por Radiofrecuencia (RFID, por sus siglas en ingles), sin embargo, con el avance de la tecnología el uso de IOT mostro su gran importancia para sectores como transporte, manufactura, agrícola, entre otros.
+El internet de las cosas busca la interconexión de objetos de la vida cotidiana por medio de una red de comunicación como lo puede ser el internet. Donde su objetivo principal es la obtención de información relevante de los objetos, ambientes, en el que estos se encuentran por medio de sensores. También envían información a través de internet ya sea para almacenarla en la nube o el análisis de información de manera rápida para la toma de decisiones en tiempo real sobre procesos críticos.
+En otras palabras, el internet de las cosas es una red gigante de cosas (dispositivos) y personas conectadas que recopilan, comparten datos y toman decisiones a partir de estos.
+El concepto de cosas incluye innumerables aparatos, como sensores, luces inteligentes en el hogar, pulseras que monitorizan la salud, piezas de sistemas de seguridad (cámaras, etc.) y componentes relacionados con la conducción automática; todos ellos conectados a internet y otros protocolos de comunicación que más adelante serán explicados. El IOT suele estar muy automatizado o mejorado con software inteligente, por lo que requiere poca interacción entre personas y máquinas, y a veces ninguna.</p>
+<p>Las ventajas que tiene el IOT son:</p>
+<ul>
+<li>Conectividad permanente de objetos cotidianos a una red, capturando la información de estos, teniendo así la posibilidad de crear sistemas que funcionen en tiempo real y que pueden ser autónomos para la toma de decisiones inteligentes.</li>
+<li>Permite generar alertas de uno o varios procesos que necesiten la intervención humana</li>
+<li>Intervención de diferentes sectores de la industria para el bienestar y mejoramiento de la calidad de vida de las personas</li>
+</ul>
+<h3 id="historia-del-iot">Historia del IOT</h3>
+<ul>
+<li><strong>1982</strong> Máquina de Coca-Cola conectada con ARPNET.</li>
+<li><strong>1989</strong> World Wide Web (WWW).</li>
+<li><strong>1990</strong> Primera tostadora conectada a Internet.</li>
+<li><strong>1993</strong> XCOFFEE, Cafetera que informa si hay cafe o no.</li>
+<li><strong>1994</strong> WEARCAM, cámara portátil conectada a internet</li>
+<li><strong>1998</strong> Introducción al IPv6.</li>
+<li><strong>1999</strong> Aparece el termino Internet de las Cosas (IoT): fue usado por primera vez por Kevin Ashton ejecutivo de Auto-ID labs en el MIT.</li>
+<li><strong>2000</strong> Internet digital Dios, LG anuncia un refrigerador con conexión a internet.</li>
+<li><strong>2004</strong> El termino IoT se hace popular.</li>
+<li><strong>2005</strong> NABAZTAG, pequeño robot conectado a internet.</li>
+<li><strong>2008</strong> Este año se considera que nació el IoT debido al auge de dispositivos conectados.</li>
+<li><strong>2009</strong> St. Jude Medical e IoT, Adaptador USB inalámbrico que recibía datos del implante cardiaco de un paciente.</li>
+<li><strong>2010</strong> NEST COMPANY, compañía de electrodomésticos inteligentes.</li>
+<li><strong>2011</strong> Gartner adiciona IoT al ciclo Hype</li>
+<li><strong>2014</strong> Desarrollo de estánderes industriales, Intel, Cisco, IBM, GE, AT&amp;T, se unen para mejorar la integración de IoT en la industria.</li>
+<li><strong>2015</strong> Estándares globales en IoT.</li>
+<li><strong>2016</strong> MIRAI, primer malware de IoT.</li>
+<li><strong>2017</strong> Servicios de IoT.</li>
+<li><strong>2020</strong> Ciclo Hype de IoT, se observa la madurez tecnológica de los subtemas de IoT y cuáles son los siguientes tópicos relevantes.</li>
+</ul>
+<h3 id="etapas-de-una-solucion-iot">Etapas de una solución IoT</h3>
+<p>Para facilitar la creación de nuevas soluciones de IoT y seguir un orden lógico en el proceso de construcción y diseño, se proponen las siguientes etapas:</p>
+<p>Etapas antes de la comercialización de IoT:</p>
+<ol>
+<li>
+<p><strong>Idea de implementación</strong>:
+Evaluar la posibilidad de implementar una solución IoT en tu empresa o en tus actividades diarias. Antes de comenzar, es importante preguntarse si ya existe una solución similar y qué ventajas ofrece.</p>
+</li>
+<li>
+<p><strong>Selección de componentes y dispositivos intermedios</strong>:
+Considerar el rendimiento, consumo y precio de los componentes. El prototipo permitirá obtener una primera aproximación de la solución.</p>
+</li>
+<li>
+<p><strong>Diseño de sistemas de comunicaciones</strong>:
+Integrar sistemas operativos que incluyan la capa de comunicaciones. La frecuencia, potencia y modo de operación son aspectos clave a tener en cuenta.</p>
+</li>
+<li>
+<p><strong>Establecer infraestructura de comunicaciones e información</strong>:
+Esencial para estandarizar y establecer la conectividad entre diferentes dispositivos y protocolos de comunicación.</p>
+</li>
+<li>
+<p><strong>Garantizar la seguridad de la aplicación</strong>:
+Proteger la integridad y confidencialidad de los datos, ya que esto es fundamental en las infraestructuras actuales de IoT.</p>
+</li>
+<li>
+<p><strong>Implementar infraestructura y servicios en la nube</strong>:
+Proteger la integridad y confidencialidad de los datos, ya que esto es fundamental en las infraestructuras actuales de IoT.</p>
+</li>
+<li>
+<p><strong>Desarrollar aplicaciones para el análisis de datos</strong>:
+Utilizar software y herramientas que incluyan funciones de aprendizaje automático y minería de datos, lo cual es crucial para la toma de decisiones en IoT.</p>
+</li>
+<li>
+<p><strong>Diseñar una interfaz gráfica para el usuario</strong>:
+Permitir el acceso a la información de manera cómoda y sencilla, fomentando la interacción entre el usuario y el dispositivo.</p>
+</li>
+<li>
+<p><strong>Crear software de gestión para aplicaciones</strong>:
+Este software regula el funcionamiento del dispositivo, incluyendo algoritmos de proceso, comunicación, sensorización, actuación y consumo energético.</p>
+</li>
+<li>
+<p><strong>Seleccionar proveedores de servicios</strong>:
+Agregar valor a través de la conectividad y desarrollar nuevos servicios y soluciones en diversos entornos industriales.</p>
+</li>
+<li>
+<p><strong>Desarrollar productos y soluciones verticales</strong>:
+Generar nuevos conocimientos y oportunidades para monetizar los datos de los dispositivos conectados mediante soluciones que transformen las organizaciones para el futuro.</p>
+</li>
+</ol>
+<h2 id="td">TD</h2>
+<ol>
+<li>
+<p>Orden de la clase y objetivo de la clase:</p>
+</li>
+<li>
+<p>Juego de palabras </p>
+<ul>
+<li>IoT</li>
+<li>Protocolos</li>
+<li>HardWare</li>
+<li>Sensor</li>
+<li>Actuador</li>
+<li>Sistema</li>
+<li>Tópico</li>
+<li>Usuario</li>
+<li>Microprocesador</li>
+</ul>
+</li>
+<li>
+<p>Discución de conceptos claves</p>
+<ul>
+<li>¿Qué es el Internet de las Cosas?</li>
+<li>¿Cuál es la importancia del IoT en el mundo de hoy?</li>
+<li>¿En qué sector económico está incursionando el IoT en la actualidad?</li>
+<li>¿Cuáles son los elementos que intervienen en el desarrollo IoT?</li>
+<li>¿Qué ventajas tiene el IoT?</li>
+<li>¿Comó podemos hacer uso del IoT en nuestro hogar?</li>
+<li>¿Comó se le agrega el valor al IoT?</li>
+</ul>
+</li>
+<li>
+<p>Ejemplo de beneficios del IoT</p>
+</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IxgtaqnpSJQ?si=vB60_o_u1SBLPHAX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Bitacora/8-%20Semana%207/" class="btn btn-neutral float-left" title="3. Instrumentación"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase%2010/" class="btn btn-neutral float-right" title="Clase 10">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Bitacora/8-%20Semana%207/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase%2010/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

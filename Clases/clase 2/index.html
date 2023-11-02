@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 2 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 2";
+        var mkdocs_page_input_path = "Clases\\clase 2.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 2</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacion-sector-industrial">Aplicación Sector Industrial</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacion-sector-salud">Aplicación Sector Salud</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicacion-sector-agricola">Aplicación Sector Agrícola</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 2</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-2">Clase 2</h1>
+<h2 id="ti">TI</h2>
+<p>El Internet de las Cosas (IoT) es una tecnología que está revolucionando el mundo, con aplicaciones en diversos sectores, para entender las diferentes aplicaciones que tiene el Internet de las Cosas, se presentan tres lecturas, cada una de las cuales contiene un proyecto que se desempeña en un sector diferente. Léalos y reflexione sobre posibles ideas que se le ocurran para aplicar el IoT.</p>
+<p>Recomendación: Sí durante las lecturas aparecen terminos que desconoce, investigue al respecto, podría ayudar a una mejor comprensión de estos.</p>
+<h3 id="aplicacion-sector-industrial">Aplicación Sector Industrial</h3>
+<p>En el sector industrial, se propone un texto que, más allá de una idea industrializada, muestra cómo el IoT puede aprovechar la información como principal activo y cómo, a partir de este, pueden surgir nuevas ideas de negocio.</p>
+<iframe src="../../img/document-IoT.pdf" frameborder="0" width="100%" height="600px"></iframe>
+
+<p>Además recomiendo echar un vistazo a la siguiente articulo, el cual habla sobre el IIoT o IoT Industral <a href="https://www.hpe.com/lamerica/es/what-is/industrial-iot.html">Link</a>.</p>
+<h3 id="aplicacion-sector-salud">Aplicación Sector Salud</h3>
+<p>Para el sector salud, se propone una lectura sobre un estudio realizado en Bogotá, para reducir lesiones por conservar mal los medicamentos. Esto es una forma de ver que, en cualquier sector, se necesita de las nuevas tecnologías.</p>
+<iframe src="../../img/IoT aplicacion salud.pdf" frameborder="0" width="100%" height="600px"></iframe>
+
+<h3 id="aplicacion-sector-agricola">Aplicación Sector Agrícola</h3>
+<p>En el siguiente artículo podrás encontrar un ejemplo de cómo un sistema basado en la tecnología de internet de las cosas es implementado para monitorear y evaluar diferentes factores en el desarrollo de un cultivo, con el objetivo de adquirir información y de esta manera tomar decisiones de forma inmediata.</p>
+<iframe src="../../img/IoT Sector Agricola.pdf" frameborder="0" width="100%" height="600px"></iframe>
+
+<h2 id="td">TD</h2>
+<ol>
+<li>
+<p>Discución y solución de prguntas sobre las lecturas</p>
+<ul>
+<li>¿Qué tal le perecieron las lecturas?</li>
+<li>¿Se le ocurrieron algunas aplicaciones diferentes a las presentadas en los textos?</li>
+</ul>
+</li>
+<li>
+<p>Video sobre IoT en Colombia
+    <div class="row mb-3">
+    <div class="col-12 mx-auto">
+    <div style="background-color:black;width:100%;padding-top:56.25%;position:relative;">
+    <iframe style="position:absolute;top:0;left:0;bottom:0;right:0;" width="100%" height="100%" src="https://www.youtube.com/embed/tOD1OglehXs?si=KFKFYU9FSO3xe1Du" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    </div>
+    </div></p>
+</li>
+<li>
+<p>Dar ideas para solucionar las siguientes problemáticas mediante IoT:</p>
+<ul>
+<li>¿Cómo puede el Internet de las Cosas ser útil en la generación de energías renovables?</li>
+<li>¿Cómo puede ser usado el IoT para el monitoreo del cambio climático?</li>
+<li>¿Cómo puede ser el IoT usado en el sistema educativo?</li>
+<li>Investigue una problemática mundial actual y piense una posible solución IoT. Revise los ODS.</li>
+</ul>
+</li>
+<li>
+<p>Socialización de las respuestas</p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../clase%2010/" class="btn btn-neutral float-left" title="Clase 10"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase%203/" class="btn btn-neutral float-right" title="Clase 3">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../clase%2010/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase%203/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

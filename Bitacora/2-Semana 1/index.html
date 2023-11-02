@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>2. Semana 1 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2. Semana 1";
+        var mkdocs_page_input_path = "Bitacora\\2-Semana 1.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">2. Semana 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#05082023">05/08/2023</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#que-es-el-iot">¿Qué es el IoT?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#histora-del-iot">Histora del IoT</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#06082023">06/08/2023</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#etapas-de-una-solucion-iot">Etapas de una solución IoT</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lecturas-complementarias">Lecturas complementarias</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#07082023">07/08/2023</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicaciones-industriales">Aplicaciones Industriales</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicaciones-agricolas">Aplicaciones Agrícolas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aplicaciones-en-salud">Aplicaciones en Salud</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#08082023">08/08/2023</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#arquitectura-iot">Arquitectura IoT</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#que-es-una-arquitectura">Que es una arquitectura:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#capas-en-una-arquitectura-de-iot">Capas en una arquitectura de IoT:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#diseno-de-una-solucion-iot">Diseño de una solución IoT:</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Clases/clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Bitacora &raquo;</li>
+      <li>2. Semana 1</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2-semana-1">2. Semana 1</h1>
+<h2 id="05082023">05/08/2023</h2>
+<h3 id="que-es-el-iot">¿Qué es el IoT?</h3>
+<p>En la actualidad, se habla de la industria 4.0, que son las industrias que se apoyan en las tecnologías actuales para optimizar sus procesos de producción.</p>
+<p>Su principio se basa en 4 tecnologías:</p>
+<ul>
+<li>El internet de las cosas.</li>
+<li>Sistemas Ciberfísicos.</li>
+<li>Big Data.</li>
+<li>Inteligencia computacional.</li>
+</ul>
+<p>El Internet de las cosas es la base para las demás tecnologías, inicialmente este termino fue usado para los sistemas electrónicos que usaban la tecnología RFID; sin embargo, con el avance de la tecnología y el uso de IoT, mostró su gran importancia para sectores como transporte, manufactura, agrícola, entre otros. El Internet de las Cosas busca la interconexión de objetos de la vida cotidiana por medio de una red de comunicación, como lo puede ser Internet.</p>
+<p>El Internet de las Cosas busca la interconexión de objetos de la vida cotidiana por medio de una red de comunicación, como lo puede ser Internet. Su objetivo principal es la obtención de información relevante de los objetos y ambientes en los que estos se encuentran por medio de sensores. También envía información a través de Internet, ya sea para almacenarla en la nube o para el análisis de información de manera rápida, con el fin de tomar decisiones en tiempo real sobre procesos críticos.</p>
+<p><img alt="" src="../../img/red-iot-s1.png" /></p>
+<div style="text-align:center">Tomado de Freepik</div>
+
+<p>Ventajas del Internet de las Cosas (IoT):</p>
+<ol>
+<li>Conectividad permanente de objetos cotidianos a una red, capturando su información, lo que brinda la posibilidad de crear sistemas que funcionen en tiempo real y puedan operar de manera autónoma para la toma de decisiones inteligentes.</li>
+<li>Permite generar alertas para uno o varios procesos que requieran intervención humana.</li>
+<li>Involucra la participación de diversos sectores de la industria en pos del bienestar y la mejora de la calidad de vida de las personas.</li>
+</ol>
+<h3 id="histora-del-iot">Histora del IoT</h3>
+<p>Eventos que han permitido o aportado en el desarrollo del paradigma de IoT:</p>
+<ul>
+<li><strong>1982</strong> Máquina de Coca-Cola conectada con ARPNET.</li>
+<li><strong>1989</strong> World Wide Web (WWW).</li>
+<li><strong>1990</strong> Primera tostadora conectada a Internet.</li>
+<li><strong>1993</strong> XCOFFEE, Cafetera que informa si hay cafe o no.</li>
+<li><strong>1994</strong> WEARCAM, cámara portátil conectada a internet</li>
+<li><strong>1998</strong> Introducción al IPv6.</li>
+<li><strong>1999</strong> Aparece el termino Internet de las Cosas (IoT): fue usado por primera vez por Kevin Ashton ejecutivo de Auto-ID labs en el MIT.</li>
+<li><strong>2000</strong> Internet digital Dios, LG anuncia un refrigerador con conexión a internet.</li>
+<li><strong>2004</strong> El termino IoT se hace popular.</li>
+<li><strong>2005</strong> NABAZTAG, pequeño robot conectado a internet.</li>
+<li><strong>2008</strong> Este año se considera que nació el IoT debido al auge de dispositivos conectados.</li>
+<li><strong>2009</strong> St. Jude Medical e IoT, Adaptador USB inalámbrico que recibía datos del implante cardiaco de un paciente.</li>
+<li><strong>2010</strong> NEST COMPANY, compañía de electrodomésticos inteligentes.</li>
+<li><strong>2011</strong> Gartner adiciona IoT al ciclo Hype</li>
+<li><strong>2014</strong> Desarrollo de estánderes industriales, Intel, Cisco, IBM, GE, AT&amp;T, se unen para mejorar la integración de IoT en la industria.</li>
+<li><strong>2015</strong> Estándares globales en IoT.</li>
+<li><strong>2016</strong> MIRAI, primer malware de IoT.</li>
+<li><strong>2017</strong> Servicios de IoT.</li>
+<li><strong>2020</strong> Ciclo Hype de IoT, se observa la madurez tecnológica de los subtemas de IoT y cuáles son los siguientes tópicos relevantes.</li>
+</ul>
+<h2 id="06082023">06/08/2023</h2>
+<h3 id="etapas-de-una-solucion-iot">Etapas de una solución IoT</h3>
+<p>Para facilitar la creación de nuevas soluciones de IoT y seguir un orden lógico en el proceso de construcción y diseño, se proponen las siguientes etapas:</p>
+<p>Etapas antes de la comercialización de IoT:</p>
+<ol>
+<li>
+<p><strong>Idea de implementación</strong>:
+Evaluar la posibilidad de implementar una solución IoT en tu empresa o en tus actividades diarias. Antes de comenzar, es importante preguntarse si ya existe una solución similar y qué ventajas ofrece.</p>
+</li>
+<li>
+<p><strong>Selección de componentes y dispositivos intermedios</strong>:
+Considerar el rendimiento, consumo y precio de los componentes. El prototipo permitirá obtener una primera aproximación de la solución.</p>
+</li>
+<li>
+<p><strong>Diseño de sistemas de comunicaciones</strong>:
+Integrar sistemas operativos que incluyan la capa de comunicaciones. La frecuencia, potencia y modo de operación son aspectos clave a tener en cuenta.</p>
+</li>
+<li>
+<p><strong>Establecer infraestructura de comunicaciones e información</strong>:
+Esencial para estandarizar y establecer la conectividad entre diferentes dispositivos y protocolos de comunicación.</p>
+</li>
+<li>
+<p><strong>Garantizar la seguridad de la aplicación</strong>:
+Proteger la integridad y confidencialidad de los datos, ya que esto es fundamental en las infraestructuras actuales de IoT.</p>
+</li>
+<li>
+<p><strong>Implementar infraestructura y servicios en la nube</strong>:
+Proteger la integridad y confidencialidad de los datos, ya que esto es fundamental en las infraestructuras actuales de IoT.</p>
+</li>
+<li>
+<p><strong>Desarrollar aplicaciones para el análisis de datos</strong>:
+Utilizar software y herramientas que incluyan funciones de aprendizaje automático y minería de datos, lo cual es crucial para la toma de decisiones en IoT.</p>
+</li>
+<li>
+<p><strong>Diseñar una interfaz gráfica para el usuario</strong>:
+Permitir el acceso a la información de manera cómoda y sencilla, fomentando la interacción entre el usuario y el dispositivo.</p>
+</li>
+<li>
+<p><strong>Crear software de gestión para aplicaciones</strong>:
+Este software regula el funcionamiento del dispositivo, incluyendo algoritmos de proceso, comunicación, sensorización, actuación y consumo energético.</p>
+</li>
+<li>
+<p><strong>Seleccionar proveedores de servicios</strong>:
+Agregar valor a través de la conectividad y desarrollar nuevos servicios y soluciones en diversos entornos industriales.</p>
+</li>
+<li>
+<p><strong>Desarrollar productos y soluciones verticales</strong>:
+Generar nuevos conocimientos y oportunidades para monetizar los datos de los dispositivos conectados mediante soluciones que transformen las organizaciones para el futuro.</p>
+</li>
+</ol>
+<h3 id="lecturas-complementarias">Lecturas complementarias</h3>
+<ol>
+<li>
+<p>Texto sobre las diferencias entre el IoT y el IoT Industrial (IIoT).
+<a href="https://www.hpe.com/lamerica/es/what-is/industrial-iot.html">IIoT</a></p>
+</li>
+<li>
+<p>Arquitectura de dispositivos conectados a la nube.
+<a href="https://cloud.google.com/architecture/connected-devices?hl=es-419">Cloud_Archicture</a></p>
+</li>
+</ol>
+<h2 id="07082023">07/08/2023</h2>
+<h3 id="aplicaciones-industriales">Aplicaciones Industriales</h3>
+<p>Para el entendimiento de las aplicaciones industriales, se realizó la lectura del texto 'El impacto de un nuevo paradigma tecnológico-social: el Internet de las cosas y la capacidad de innovación.</p>
+<p>Dicho texto hace énfasis en el impacto que ha venido teniendo el IoT, en cómo cada vez hay más dispositivos conectados y cómo ello llevó a la aparición de métodos como la web semántica para que haya más capacidad de recibir datos y procesarlos, como lo hace el Big Data. También habla de los tres grandes bloques que estableció el Working Party 29 (WP29), quienes son los encargados de la seguridad de datos. Estos tres grandes bloques serían:</p>
+<ul>
+<li>Wearable Computing: Son dispositivos miniaturizados, de tal manera que se pueden llevar puestos y el cliente no los percibe. Por ejemplo, las gafas de Google (Google Glass), los smartwatches, entre otros.</li>
+<li>Dispositivos que registran información sobre la actividad de las personas, como lo es su estado de salud, actividad física, lugares visitados y con dicha información volcar los objetivos de venta, siempre y cuando dicha información no sea usada de forma incorrecta.</li>
+<li>Domótica: Por domótica se entiende el conjunto de tecnologías aplicadas al control y automatización inteligente de la vivienda.</li>
+</ul>
+<p>Además de lo anterior, se habló de un producto lanzado por la empresa telefónica. Dicho producto se asemeja a unas piezas de Lego, las cuales se encajan entre sí, dándole así al cliente la libertad de armar sus propios sensores y que estos cumplan funciones deseadas. El objetivo es que el usuario pueda 'automatizar' su casa a gusto.</p>
+<p><img alt="" src="../../img/Telefonica_1.png" /></p>
+<p>También se habla de 'Telepizza', el cual es un botón que se coloca en la nevera mediante un imán. Dicho botón está enlazado a la página web de la pizzería, donde el cliente crea su perfil, selecciona una pizza preferida y la vincula con el botón. De esta manera, el cliente solo necesitará pulsar el botón para que la pizza llegue a su casa, y la pizzería tendría un banco de información de sus clientes.</p>
+<p><img alt="" src="../../img/Telepizza_1.png" /></p>
+<p>Por todo lo anterior y aunque los productos puedan parecer simples, se le da gran importancia a la capacidad de innovación que ha traído consigo el IoT, pues se ha producido una reconfiguración del conocimiento en un entorno dinámico y cambiante como lo es la tecnología. Y es que Internet es un impulsor de negocios que cuenta con una gran variedad de productos. A través de esta plataforma, en muchos casos se obtiene una comercialización de éxito, ya que abarata los costes de apertura y mantenimiento, lo que permite que el negocio sea más rentable para el emprendedor.</p>
+<p><img alt="" src="../../img/Telepizza_2.png" /></p>
+<h3 id="aplicaciones-agricolas">Aplicaciones Agrícolas</h3>
+<p>Para el entendimiento de sus aplicaciones agrícolas, se hace uso de un paper desarrollado en la Universidad de Córdoba, el cual habla de sistemas IoT para el cuidado y automatización de cultivos protegidos. En este proyecto tenían como motivación encontrar nuevas y mejores maneras de producción agrícola. Promover nuevos procesos y métodos más eficientes para el control de los cultivos, lograr mejor calidad y ahorrar insumos.</p>
+<p>Aprovechar los sistemas de control para desarrollar un sistema IoT que permita un mejor monitoreo de los cultivos y que recolecte datos en tiempo real para verificar su estado, al mismo tiempo que se toman decisiones o se llevan a cabo acciones.</p>
+<p>Se propuso entonces el siguiente proyecto con una arquitectura tipo Cliente-Servidor, que se compone de capas:</p>
+<p><img alt="" src="../../img/Arquitectura_c.png" /></p>
+<ol>
+<li>
+<p><strong>Administración y Procesamiento de Capturas (Datos)</strong>: Es responsable de recibir la información de cada sensor mediante el protocolo MQTT, el cual permite conexiones cableadas e inalámbricas. Existe una administración y procesamiento directo de datos por parte del servidor a través de una interfaz de gestión que recibe la información transmitida en el sistema. Estos procesos están establecidos como capas subyacentes a los procesos principales.</p>
+</li>
+<li>
+<p><strong>Interfaz de Servicios al Cliente</strong>: Es la encargada de recibir las peticiones del cliente en la web, que luego se envían a una capa subyacente encargada de la gestión y procesamiento de la petición. También se muestra información al cliente mediante HTTP.</p>
+</li>
+<li>
+<p><strong>Administración y Gestión</strong>: Esta capa está a cargo de la suscripción al broker por un cliente MQTT como Paho. Recibe los datos y se conecta con la base de datos para su almacenamiento, dependiendo de la variable que se esté administrando. Aquí, cada dato se procesa en una cadena determinada.</p>
+</li>
+<li>
+<p><strong>Recuperación y Entrega de Información</strong>: Esta capa está diseñada para recuperar y entregar información, dependiendo de las solicitudes y respuestas del usuario, así como de los sensores. De la misma manera, cuenta con algoritmos de recuperación de información para facilitar las consultas realizadas por los clientes.</p>
+</li>
+</ol>
+<p><img alt="" src="../../img/Capas_iot.png" /></p>
+<p>El procesamiento es manejado por la estación, que es la parte del dispositivo encargada de la recolección, procesamiento y envío de la información leída a través de los diferentes sensores.</p>
+<p><img alt="" src="../../img/Estacion.png" /></p>
+<h3 id="aplicaciones-en-salud">Aplicaciones en Salud</h3>
+<p>Para este sector, se utiliza un proyecto de investigación de la Universidad del Rosario en compañía de otras instituciones y el Hospital Universitario Mayor de Méridi en Bogotá. Esto surge motivado por las estadísticas del Ministerio de Salud y Protección Social, según las cuales existe un porcentaje del 19,4% de lesiones reportadas debido al mal manejo que las instituciones de salud dan a los medicamentos.</p>
+<p>La falta de control de variables como la temperatura y la humedad en el almacenamiento de los medicamentos está relacionada con la alteración de las propiedades químicas de los productos farmacéuticos.</p>
+<p>El sistema implementado se basó en una arquitectura centralizada de IoT, que hace uso de protocolos MQTT (Message Queue Telemetry Transport) y HTTPS (Hypertext Transfer Protocol Secure). Estos protocolos permitieron la conexión de objetos a través de Internet para transmitir información, con el propósito de lograr una comunicación inteligente entre los objetos y el sistema central de información.</p>
+<p>La implementación final del sistema de monitorización permitió obtener un registro continuo de las variables de temperatura y humedad, estableciendo alarmas dinámicas con la finalidad de identificar y alertar al personal responsable sobre comportamientos no deseados en el equipo de refrigeración. Esto logró optimizar el registro diario de temperatura y humedad, garantizando la trazabilidad del proceso.</p>
+<p>El proyecto plantea una solución IoT que permita la supervisión y registro de las temperaturas y humedad de un equipo de refrigeración.</p>
+<p>Dado que el dispositivo mantiene temperaturas entre 2 - 8 °C, se eligió el sensor SHT11 para controlar que la temperatura del dispositivo se mantuviera en este rango.</p>
+<p><img alt="" src="../../img/SHT11.png" /></p>
+<p>Se implementó un tipo de arquitectura centralizada: la función del Broker es garantizar la calidad de los datos adquiridos antes de ser publicados en la nube. Este proceso permite que si existe un error en la lectura del sensor o se produce alguna pérdida de datos, estos sean depurados y corregidos por el Broker antes de su posterior publicación en la nube.</p>
+<p><img alt="" src="../../img/Centralizado.png" /></p>
+<p>El sensor se conecta a la tarjeta de desarrollo ESP8266, que se caracteriza por su conexión fácil y segura vía WiFi. Los datos se leen cada 8 segundos y se envían mediante MQTT al broker local, donde está implementado un Raspberry Pi 3 (una computadora compacta).</p>
+<p>MySQL es un sistema de gestión de bases de datos. SSL es un certificado digital que autentica la identidad de un sitio web y habilita una conexión cifrada. API (Interfaz de Programación de Aplicaciones) se puede considerar como un contrato de servicios entre dos aplicaciones.</p>
+<h2 id="08082023">08/08/2023</h2>
+<h3 id="arquitectura-iot">Arquitectura IoT</h3>
+<h4 id="que-es-una-arquitectura">Que es una arquitectura:</h4>
+<p>Describe la interacción entre los componentes del sistema, por lo que permite representar de forma detallada los componentes de hardware, protocolos de comunicación y la interacción segura y eficiente con el software que interactúa con el cliente. A partir de lo expuesto, se presentan las arquitecturas y sus principales componentes para aplicaciones de Internet de las Cosas.</p>
+<p>Requerimientos de una arquitectura IoT:
+1. <strong>Conectividad permanente</strong>:
+Dado que Internet de las Cosas (IoT) es una red de múltiples dispositivos conectados a internet, es indispensable mantener una conexión permanente entre dispositivos, además de tener alternativas para el respaldo de información en los casos en que esta conexión presente fallos.</p>
+<ol>
+<li>
+<p><strong>Gestión de los datos</strong>:
+Debe llevar a cabo una gestión adecuada de los datos, permitiendo una recolección eficiente de la información y estableciendo estrategias para el análisis automático de dicha información. Por último, en una arquitectura de IoT se deben establecer procedimientos que posibiliten la toma de decisiones basadas en la recolección y análisis de datos.</p>
+</li>
+<li>
+<p><strong>Gestión de los dispositivos</strong>:
+Debe establecer estrategias para realizar configuraciones, actualizaciones, búsqueda y reporte de fallos de manera eficiente en todos los dispositivos interconectados.</p>
+</li>
+<li>
+<p><strong>Escalabilidad</strong>:
+Debe permitir el registro, actualización y eliminación de dispositivos de manera fácil y rápida. Igualmente, debe establecer estrategias de gestión de red que permitan el envío y registro de información sin pérdidas considerables.</p>
+</li>
+<li>
+<p><strong>Flexibilidad</strong>:
+Debe permitir la gestión de dispositivos sin importar el fabricante del dispositivo ni los protocolos de comunicación utilizados. Por lo tanto, debe establecer procedimientos que le permitan adaptarse a los cambios tecnológicos y a nuevos protocolos existentes.</p>
+</li>
+<li>
+<p><strong>Seguridad</strong>:
+La seguridad en una arquitectura de Internet de las Cosas (IoT) es fundamental, por lo que se deben establecer estrategias de gestión de red utilizando protocolos de transferencia de información rápidos pero, al mismo tiempo, seguros.</p>
+</li>
+</ol>
+<p>Cabe aclarar que, aunque el requerimiento de seguridad esté al final, no significa que se pueda ignorar; al contrario, este componente de la arquitectura es una pieza clave en la actualidad, ya que son recurrentes los intentos de robo de información en una época en la que la información es el producto.</p>
+<h4 id="capas-en-una-arquitectura-de-iot">Capas en una arquitectura de IoT:</h4>
+<p>Se definen las interacciones entre el hardware del sistema IOT con los dispositivos de red, protocolos de comunicacion y el software de interaccion con el usuario.</p>
+<ol>
+<li>
+<p><strong>Aplicación</strong>:
+En esta capa se encuentran las aplicaciones, generalmente interfaces, que se encargan de la interacción con el usuario final de la aplicación.</p>
+</li>
+<li>
+<p><strong>Red</strong>:
+En esta capa se encuentran los dispositivos de red que se encargan de gestionar todo el tráfico de información a través de la red mediante protocolos como HTTP, RESTful, MQTT, CoAP.</p>
+</li>
+<li>
+<p><strong>Percepción</strong>:
+En esta capa se encuentran las cosas (Things), también llamadas entidades u objetos, que se encargan de la recolección de información del entorno a través de sensores y de la interacción con el mismo mediante actuadores.</p>
+</li>
+</ol>
+<h3 id="diseno-de-una-solucion-iot">Diseño de una solución IoT:</h3>
+<p>El diseño de una solución se compone de las siguientes 9 fases:</p>
+<ol>
+<li>
+<p><strong>Descripción del problema</strong>:</p>
+<ul>
+<li>¿Qué problema voy a solucionar?</li>
+<li>Alcance de la solución</li>
+<li>Resultados esperados</li>
+<li>Nombre de la aplicación</li>
+</ul>
+</li>
+<li>
+<p><strong>Requerimientos</strong>:</p>
+<ul>
+<li>Son aquellas peticiones que realizan los clientes para el funcionamiento de su aplicación.</li>
+<li>La abstracción del problema para su posterior implementación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entidades (Variables)</strong>:</p>
+<ul>
+<li>Nombre: debe ser único.</li>
+<li>Tipo: numérica, texto, booleana.</li>
+<li>Rango: finito, determinado por los sensores.</li>
+</ul>
+</li>
+<li>
+<p><strong>Servicios (Funciones)</strong>:</p>
+<ul>
+<li>Son aquellas acciones que nuestro sistema IoT realiza constantemente.</li>
+<li>Por lo general, tienen retorno ya sea texto, numérico o booleano.</li>
+<li>Se definen a partir de las abstracciones de los requerimientos iniciales.</li>
+</ul>
+</li>
+<li>
+<p><strong>Eventos</strong>:</p>
+<ul>
+<li>Son lo que se ejecuta cuando alguna variable está fuera de sus parámetros establecidos.</li>
+<li>Por lo general, los parámetros están definidos por los rangos de las entidades.</li>
+<li>Estos pueden generar desde una alerta al usuario hasta el control de un actuador.</li>
+</ul>
+</li>
+<li>
+<p><strong>Arquitectura</strong>:</p>
+<ul>
+<li>En la arquitectura centralizada, se posee una capa de depuración.</li>
+<li>En la arquitectura distribuida, la depuración se realiza en los sensores o en el servidor, no como una capa extra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Protocolos</strong>:</p>
+<ul>
+<li>HTTP</li>
+<li>CoAP</li>
+<li>MQTT</li>
+<li>Otros más</li>
+</ul>
+</li>
+<li>
+<p><strong>Almacenamiento</strong>:</p>
+<ul>
+<li>Base de datos Relacionales (Maria DB)</li>
+<li>Base de datos no relacionales (Firebase)</li>
+</ul>
+</li>
+<li>
+<p><strong>Interfaz</strong>:</p>
+<ul>
+<li>Se define la manera en que se entregará la información y las soluciones. Normalmente, mediante gráficos.</li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../14-Semana%2013/" class="btn btn-neutral float-left" title="14. Semana 13"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../3-Semana%202/" class="btn btn-neutral float-right" title="3. Semana 2">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../14-Semana%2013/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../3-Semana%202/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

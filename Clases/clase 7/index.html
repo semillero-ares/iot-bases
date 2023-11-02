@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 7 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 7";
+        var mkdocs_page_input_path = "Clases\\clase 7.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 7</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#protocolos">Protocolos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#serial">Serial</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%209/">Clase 9</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 7</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-7">Clase 7</h1>
+<h2 id="ti">TI</h2>
+<h3 id="protocolos">Protocolos</h3>
+<p>Los protocolos de comunicación son la forma como se conectan las cosas, la nube y el usuario. Estos protocolos son un conjunto de reglas que permiten la comunicación entre diferentes tipos de sistemas, este conjunto de reglas esran dados por una serie de instrucciones que indican a los elementos básicos.</p>
+<p>Reglas:</p>
+<ul>
+<li>¿Quién es el remitente del mensaje?</li>
+<li>¿Quién es él o los destinatarios del mensaje?</li>
+<li>¿Qué tipo de mensaje se va a enviar a través de la red?</li>
+<li>¿Por qué medio se va a enviar este tipo de mensaje?</li>
+</ul>
+<p>Los protocolos mas usados en IoT son:</p>
+<ul>
+<li>
+<p>Protocolo Serial: se usa cuando se quiere realizar una depuración de las cosas, sensores y actuadores. Se hace para realizar una variación interna del dispositivo y verificar su correcto funcionamiento (Suele ser por cable, pero también tiene opción Bluetooth).</p>
+</li>
+<li>
+<p>Protocolo MQTT: Funciona de forma M2M (machine to machine), busca interconectar cosas, dispositivos, etc., mediante un broker que es un servidor al cual los dispositivos se suscriben o publican datos o recursos que normalmente son alojados en la nube.</p>
+</li>
+<li>
+<p>Protocolo HTTP: Funciona de forma cliente-servidor, el cliente realiza una petición a un servicio alojado en el servidor, este busca lo solicitado y responde al cliente. Ejemplo: direcciones web.</p>
+</li>
+</ul>
+<h4 id="serial">Serial</h4>
+<h5 id="serial-arduino">Serial Arduino</h5>
+<ol>
+<li>
+<p>El Entorno de Desarrollo Integrado (IDE) permite comunicarse con nuestro equipo
+a través del puerto serie. Lo anterior se conoce como comunicación serial.</p>
+</li>
+<li>
+<p>Si bien es cierto que el uso de las nuevas formas de comunicación, como es el caso
+de USB, ha desplazado la tradicional forma de comunicación (serial), la placa
+Arduino aún cuenta con un convertidor serial a USB, que permite comunicarse con
+nuestro ordenador como un dispositivo conectado a un puerto “COM” a pesar de
+que la conexión este físicamente mediante USB.</p>
+</li>
+<li>
+<p>De esta manera Arduino IDE permite enviar y visualizar datos que se gestionan a
+través del puerto serie. Dicha herramienta se conoce bajo el nombre de monitor
+serial, la cual, se encuentra en el menú de herramientas, en la opción “monitor
+serial”; lo anterior constituye la forma más simple que existe para establecer
+comunicación con la placa Arduino.</p>
+</li>
+<li>
+<p>Es así como se presenta algunas partes importantes de la interfaz de IDE Arduino;
+en el menú herramientas (1) se puede identificar el puerto al cual se conecta la
+palca Arduino (2) y en la parte superior derecha se puede encontrar y abrir el
+monitor serial para la visualización de la información adquirida.</p>
+</li>
+<li>
+<p>Es importante aclarar que existe una la configuración previa para trabajar con la
+comunicación serial mediante algunas instrucciones propias de la placa Arduino. Es
+el caso de la velocidad de transmisión de datos (baudios), lectura y estrategias de
+programación para generar acciones.</p>
+</li>
+</ol>
+<h5 id="serial-node-red">Serial Node-Red</h5>
+<ol>
+<li>
+<p>El funcionamiento del serial de comunicación de Node Red se configura a partir de
+la descarga del nodo “serial” el cual se puede realizar de la siguiente manera:
+Ingresar al menú de Node Red (al lado del botón Deploy) y en la opción Manage
+Palette se digita la búsqueda del nodo. En este caso será el nodo Serial.</p>
+</li>
+<li>
+<p>Es importante aclarar que durante la instalación pueden generarse diferentes
+mensajes sobre la descarga e instalación del paquete de nodos. Estos pueden
+asemejarse a fallas, ya que informan que no se han podido compilar los errores, pero
+a menudo son advertencias y el nodo continuará instalándose. Ocasionalmente,
+algunas plataformas requerirán que instale el conjunto completo de herramientas
+para compilar el paquete subyacente.</p>
+</li>
+<li>
+<p>Inicialmente, existen tres nodos principales de nodos para la comunicación serial:</p>
+<ul>
+<li>El nodo Serial In permite detectar automáticamente los puertos serie conectados
+al dispositivo; sin embargo, es necesario que lo especifique manualmente el puerto
+COM, la velocidad de transmisión etc.</li>
+<li>El nodo Serial out proporciona una conexión a un puerto serie saliente. Como
+respuesta envía el msg.payload, el cual se agrega a cada mensaje enviado al puerto
+serie.</li>
+<li>El nodo Serial request proporciona una conexión a un puerto serie de solicitud /
+respuesta. La idea es que el mensaje se reenviará al puerto serie siguiendo una
+cola estricta FIFO (primero en entrar, primero en salir), esperando una sola
+respuesta antes de transmitir la siguiente solicitud.</li>
+</ul>
+</li>
+</ol>
+<h2 id="td">TD</h2>
+<p>Para el trabajo dependiente se realizaran varias practicas con monitor Serial, tanto en arduino como en Node-Red</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../clase%206/" class="btn btn-neutral float-left" title="Clase 6"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../clase%208/" class="btn btn-neutral float-right" title="Clase 8">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../clase%206/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clase%208/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

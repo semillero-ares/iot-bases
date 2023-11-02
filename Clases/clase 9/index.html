@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Clase 9 - Proyecto IoT</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Clase 9";
+        var mkdocs_page_input_path = "Clases\\clase 9.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Proyecto IoT
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Proyecto Especial 4</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Bitacora</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/1-Glosario/">1. Glosario</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/14-Semana%2013/">14. Semana 13</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/2-Semana%201/">2. Semana 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/3-Semana%202/">3. Semana 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/4-Semana%203/">4 Semana 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/5-Semana%204/">5. Referencias</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/6-Semana%205/">6. Anexos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/7-%20Semana%206/">4. Conclusiones</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bitacora/8-%20Semana%207/">3. Instrumentación</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Clases</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%201/">Clase 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%2010/">Clase 10</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%202/">Clase 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%203/">Clase 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%204/">Clase 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%205/">Clase 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%206/">Clase 6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%207/">Clase 7</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../clase%208/">Clase 8</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Clase 9</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ti">TI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#protocolo-mqtt">Protocolo MQTT</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ejercicio-en-node-red">Ejercicio en Node-Red</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#td">TD</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Proyecto IoT</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Clases &raquo;</li>
+      <li>Clase 9</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="clase-9">Clase 9</h1>
+<h2 id="ti">TI</h2>
+<h3 id="protocolo-mqtt">Protocolo MQTT</h3>
+<p>Inicialmente, MQTT fue inventado y desarrollado por IBM a finales de los 90. Tal como sugiere su nombre, se trata de un protocolo de mensajería con soporte para la comunicación asíncrona entre el emisor y el receptor del mensaje, tanto en el tiempo como en el espacio.
+MQTT es un protocolo de red liviano y flexible que ofrece grandes ventajas para los desarrolladores de IoT, tales como:</p>
+<ol>
+<li>
+<p>Está basado en el paradigma cliente/servidor.</p>
+</li>
+<li>
+<p>Protocolo basado en TCP.</p>
+</li>
+<li>
+<p>Es un protocolo estándar para IoT.</p>
+</li>
+<li>
+<p>Conectividad M2M (Máquina a Máquina).</p>
+</li>
+<li>
+<p>Basado en un protocolo de mensajería publicación/suscripción.</p>
+</li>
+<li>
+<p>Hace parte de los estándares OASIS.</p>
+</li>
+<li>
+<p>Es de licencia libre.</p>
+</li>
+</ol>
+<p>La configuración del protocolo MQTT contempla dos tipos de entidades en la red: se trata de un bróker de mensajería y numerosos clientes. El bróker hace las veces de un servidor, el cual recibe todos los mensajes de los clientes y, en consecuencia, direcciona estos mensajes hacia los clientes de destino programados. Un cliente es cualquier "cosa" que pueda interactuar con el bróker y recibir mensajes. Un cliente inicialmente puede ser considerado como un sensor, dispositivo o aplicación.</p>
+<p>Es clave resaltar que dentro de la arquitectura de MQTT, el concepto de "tópico" o "tema" juega un papel fundamental, ya que a través de estos llamados "tópicos" se genera la comunicación entre los emisores y receptores de un mensaje que previamente se hayan suscrito a un "tópico" en común, con el objetivo de establecer la comunicación internamente entre ellos.</p>
+<p>La metodología que se utiliza es la de publicador/suscriptor, la cual permite el envío de mensajes entre generadores de información (publicadores) y receptores de la información (suscriptores). Esto se logra a través de un bróker, que actúa como fuente principal para el flujo de la información entre publicadores y suscriptores que comparten la información mediante mensajes, de acuerdo con una configuración previa. En la mayoría de los casos, la configuración se fundamenta en tópicos o temas.</p>
+<p><img alt="" src="../../img/mqtt_ti.png" /></p>
+<p>En ese sentido, un cliente se conecta al bróker y, a su vez, puede suscribirse a cualquier "tema" o "tópico" de mensajería del bróker. De esta manera:</p>
+<p>(a) El cliente publica los mensajes en un tema o tópico, enviando el mensaje y el tema al bróker.</p>
+<p>(b) Después, el bróker remite el mensaje a todos los clientes que se suscriben a este tema o tópico. Como los mensajes de MQTT se organizan por temas o tópicos, en una aplicación de IoT se puede especificar que determinados clientes pueden interactuar con mensajes específicos. Por ejemplo, un sensor de temperatura publicará el valor bajo el tema o tópico "sensor temp" y se suscribirán al tema "supervisión temp".</p>
+<p><img alt="" src="../../img/mqtt_ti2.png" /></p>
+<h4 id="ejercicio-en-node-red">Ejercicio en Node-Red</h4>
+<p>Para hacerse una idea de como trabajar con este protocolo, se plantea el siguiente ejercicio en Node-Red:</p>
+<ol>
+<li>
+<p>Arrastrar un nodo <strong>MQTT in</strong>, un nodo <strong>Inject</strong>, uno <strong>MQTT OUT</strong>, un nodo <strong>Debug</strong> y un nodo <strong>json</strong>.</p>
+<p><img alt="" src="../../img/mqtt_1.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>MQTT in</em>, en propiedades en la opción <strong>server</strong> seleccionar broker; en <strong>Topic</strong> se elige el nombre deaseado, que para este caso sería tipoco/mooc_IoT; en name se recomienda poner algo alusivo a la acción (ejemplo: suscriptor).</p>
+<p><img alt="" src="../../img/mqtt_2.png" /></p>
+</li>
+<li>
+<p>Se hace click en el lapicito al lado de donde se puso el server, se abrira una pestaña donde se organiza la información del broker del paso anterior. En el server se colocara test.mosquitto.org el cual permite conectarse con un servidor en la nube para gestionar los mensajes enviados.</p>
+<p><img alt="" src="../../img/mqtt_3.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>json</em>, en la opción <strong>Action</strong> de la sección de propiedades, se debe seleccionar *Convert betweeen JSON string &amp; Object.</p>
+<p><img alt="" src="../../img/mqtt_4.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>debug</em>, en la propiedad de Output seleccionar la opción <strong>payload</strong></p>
+<p><img alt="" src="../../img/mqtt_5.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>inject</em>, en la propiedad payload se debe ingresar la información que se va a enviar en formato JSON {"Temperatura":24,"Humedad":90}. Darle un nombre alusivo a la acción como por ejemplo "Envio de datos".</p>
+<p><img alt="" src="../../img/mqtt_6.png" /></p>
+</li>
+<li>
+<p>En el nodo <em>MQTT out</em>, en el server seleccionamos el broker, en topico se colaca, el topico que se ingreso en el <em>MQTT in</em>, topico/mooc_IoT; se le asigana el nombre de publicador en este caso.</p>
+<p><img alt="" src="../../img/mqtt_7.png" /></p>
+</li>
+<li>
+<p>Dando en el lapicito al lado del server, se debe confirmar que la información del broker este correcta (nombre y server del broker).</p>
+<p><img alt="" src="../../img/mqtt_8.png" /></p>
+</li>
+<li>
+<p>Conectar los flujos y si todo queda bien, debe ver así:</p>
+<p><img alt="" src="../../img/mqtt_9.png" /></p>
+</li>
+</ol>
+<h2 id="td">TD</h2>
+<p>Hacer uso de la maqueta (Mini Ciudad) para realizar una practica de MQTT donde los estudiantes logren afianzar de forma practica los conceptos</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../clase%208/" class="btn btn-neutral float-left" title="Clase 8"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../clase%208/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/mathjax.js" defer></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
